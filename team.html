@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaTech — Team</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-logo">◼︎</span>
+        <span class="fw-bold">NovaTech</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-primary btn-sm px-3" href="contact.html">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header fade-in">
+    <div class="container text-center text-light">
+      <h1 class="fw-bold">Meet Our Team</h1>
+      <p class="lead">Passionate innovators dedicated to building great products</p>
+    </div>
+  </header>
+
+  <!-- Team Section -->
+  <section class="py-5 fade-in">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Team Member -->
+        <div class="col-md-4">
+          <div class="card border-1 shadow-sm text-center p-4 hover-card">
+            <img src="D:\Projects\NovaTech-Website\assets\aisha-khan.jpg" 
+                 class="rounded-circle mx-auto img-hover mb-3" 
+                 alt="Aisha Khan" style="width:120px;height:120px;object-fit:cover;">
+            <h6 class="mb-0">Aisha Khan</h6>
+            <small class="text-muted">Head of Product</small>
+            <p class="small text-muted mt-2">Product strategy, discovery, and growth hacking expert</p>
+          </div>
+        </div>
+        <!-- Team Member -->
+        <div class="col-md-4">
+          <div class="card border-1 shadow-sm text-center p-4 hover-card">
+            <img src="D:\Projects\NovaTech-Website\assets\rajat-mehra.jpg" 
+                 class="rounded-circle mx-auto img-hover mb-3" 
+                 alt="Rajat Mehra" style="width:120px;height:120px;object-fit:cover;">
+            <h6 class="mb-0">Rajat Mehra</h6>
+            <small class="text-muted">Engineering Lead</small>
+            <p class="small text-muted mt-2">Architecture, reliability and performance optimization guru</p>
+          </div>
+        </div>
+        <!-- Team Member -->
+        <div class="col-md-4">
+          <div class="card border-1 shadow-sm text-center p-4 hover-card">
+            <img src="D:\Projects\NovaTech-Website\assets\sana-patel.jpg" 
+                 class="rounded-circle mx-auto img-hover mb-3" 
+                 alt="Sana Patel" style="width:120px;height:120px;object-fit:cover;">
+            <h6 class="mb-0">Sana Patel</h6>
+            <small class="text-muted">Data Scientist</small>
+            <p class="small text-muted mt-2">Specialist in AI, ML, and analytics at production scale</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-auto">
+    <div class="container text-center small">
+      © <span id="year"></span> NovaTech • All rights reserved
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaTech — Blog</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-logo">◼︎</span>
+        <span class="fw-bold">NovaTech</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-primary btn-sm px-3" href="contact.html">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header fade-in">
+    <div class="container text-center text-light">
+      <h1 class="fw-bold">Our Blog</h1>
+      <p class="lead">Insights, stories, and tips from the NovaTech team</p>
+    </div>
+  </header>
+
+  <!-- Blog Section -->
+  <section class="py-5 fade-in">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Blog Post -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm hover-card">
+            <img src="D:\Projects\NovaTech-Website\assets\AI-blog2025.jpg" class="card-img-top img-hover" alt="AI in 2025" height="200" width="900">
+            <div class="card-body">
+              <h5 class="card-title">The Future of AI in 2025</h5>
+              <p class="card-text small text-muted">Explore how Artificial Intelligence will shape industries over the next few years</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Post -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm hover-card">
+            <img src="D:\Projects\NovaTech-Website\assets\Startup-Growth.jpg" class="card-img-top img-hover" alt="Scaling Startups" height="200" width="900">
+            <div class="card-body">
+              <h5 class="card-title">Scaling Your Startup</h5>
+              <p class="card-text small text-muted">Tips for growing your business sustainably without burning out your team</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Post -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm hover-card">
+            <img src="D:\Projects\NovaTech-Website\assets\Cloud-blog.jpg" class="card-img-top img-hover" alt="Cloud Trends" height="200" width="900">
+            <div class="card-body">
+              <h5 class="card-title">Top Cloud Trends</h5>
+              <p class="card-text small text-muted">Discover the latest cloud computing trends and how they impact businesses</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-auto">
+    <div class="container text-center small">
+      © <span id="year"></span> NovaTech • All rights reserved
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

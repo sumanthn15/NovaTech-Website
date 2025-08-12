@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaTech — Contact</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-logo">◼︎</span>
+        <span class="fw-bold">NovaTech</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-primary btn-sm px-3" href="contact.html">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header fade-in">
+    <div class="container text-center text-light">
+      <h1 class="fw-bold">Contact Us</h1>
+      <p class="lead">We’d love to hear about your project, Let’s talk</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <main class="container py-5 fade-in">
+    <div class="row g-4">
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div class="card border-0 shadow-sm p-4 hover-card">
+          <h5 class="fw-bold mb-3">Get in Touch</h5>
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label small">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label small">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="company" class="form-label small">Company</label>
+              <input type="text" class="form-control" id="company" placeholder="Optional">
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label small">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <button class="btn btn-outline-secondary" type="reset">Reset</button>
+            </div>
+
+            <div id="formAlert" class="mt-3 visually-hidden alert" role="alert"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+        <div class="card border-0 shadow-sm p-4 hover-card">
+          <h6 class="fw-bold">Office Address</h6>
+          <p class="small text-muted mb-1">123 Startup Avenue, Bengaluru, India</p>
+          <p class="small text-muted mb-1">Email: support@novatech.example</p>
+          <p class="small text-muted mb-3">Phone: +91 98765 43210</p>
+
+          <h6 class="fw-bold mt-3">Working Hours</h6>
+          <p class="small text-muted">Mon - Fri: 10:00 - 18:00 IST</p>
+
+          <div class="ratio ratio-16x9 rounded-3 overflow-hidden mt-4">
+            <a href="https://maps.app.goo.gl/9SSokLj6Hsq9sXYL6" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              <img src="D:\Projects\NovaTech-Website\assets\map-location.jpg" 
+                  alt="Our Office Location" 
+                  class="img-fluid rounded-3 shadow-sm img-hover">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-auto">
+    <div class="container text-center small">
+      © <span id="year"></span> NovaTech • All rights reserved
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Bootstrap form validation
+    (function () {
+      'use strict';
+      const form = document.getElementById('contactForm');
+      const alertBox = document.getElementById('formAlert');
+      form.addEventListener('submit', function (e) {
+        if (!form.checkValidity()) {
+          e.preventDefault();
+          e.stopPropagation();
+        } else {
+          e.preventDefault();
+          alertBox.className = 'alert alert-success mt-3';
+          alertBox.textContent = 'Thanks — your message has been sent!';
+          alertBox.classList.remove('visually-hidden');
+          form.reset();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    })();
+  </script>
+</body>
+</html>
